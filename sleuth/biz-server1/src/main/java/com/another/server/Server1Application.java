@@ -1,5 +1,9 @@
 package com.another.server;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+
 /**
  * @Classname Server1Application
  * @Description TODO
@@ -9,13 +13,8 @@ package com.another.server;
 @SpringBootApplication
 @EnableDiscoveryClient
 public class Server1Application {
-    @Bean
-    @LoadBalanced
-    RestTemplate restTemplate() {
-        return new RestTemplate();
-    }
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(Server1Application.class, args);
     }
 }

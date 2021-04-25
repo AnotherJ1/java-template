@@ -1,0 +1,8 @@
+server:
+  port: 9000
+  servlet:
+    application-display-name: eureka-server
+eureka:
+  client:
+    enabled: true
+    fetch-registry: true
